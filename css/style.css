@@ -1,0 +1,42 @@
+.bg-OR1{
+    background-color: rgb(255, 205, 4);
+}
+
+.bg-OR2{
+    background-color: #f2f2f280; 
+    height: fit-content;
+    border-top: 10px solid white;
+}
+.bg-OR2>ul>li{
+    background-color: #f2f2f200;
+}
+.bg-OR2>ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+.bg-OR2>ul>li>a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.profil-foto{
+    max-height: 100px;
+    border-radius: 50px;
+}
+
+.konu-foto{
+    max-height: 150px;
+}
+
+.makale>p{
+    font-size: larger;
+}
+.makale-ozet{
+    text-align: justify;
+}
+
+.noFilter{
+    color: blue;
+    text-align: right;
+    font-size: smaller;
+}
