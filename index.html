@@ -31,16 +31,32 @@
                       <li class="nav-item">
                         <a class="nav-link active" href="#">İletişim</a>
                       </li>
-                      <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown link
+                      <!-- bunu güncellediğinde sağ menüyü de güncelle -->
+                      <li class="nav-item dropdown d-lg-none">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Yazarlar
                         </a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li class="dropdown-item btn" onclick="filtre('murat')">Murat GÖKDUMAN</li>
+                            <li class="dropdown-item btn" onclick="filtre('yesim')">Yeşim BOZBEY SERT</li>
+                            <li class="dropdown-item btn" onclick="filtre('gokhan')">Gökhan YENER</li>
+                            <li class="dropdown-item btn" onclick="filtre('ozgur')">Özgür KAHRAMAN</li>
+                            <li class="dropdown-item btn" onclick="filtre('noFilter')">Tümünü göster</li>
                         </ul>
-                      </li> -->
+                      </li>
+                      <li class="nav-item dropdown d-lg-none">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Konu Listesi
+                        </a>
+                        <!-- bunu güncellediğinde sol menüyü de güncelle -->
+                        <ul class="dropdown-menu"> 
+                            <li li class="dropdown-item btn"><a href="meme_kanseri_kaderiniz_olmasin.html">Meme Kanseri Kaderiniz Olmasın</a></li>
+                            <li li class="dropdown-item btn">Gizli Tehlike: Metabolik Sendrom</li>
+                            <li li class="dropdown-item btn">Bugün Kalbin İçin Ne Yaptın?🌝❤</li>
+                            <li li class="dropdown-item btn">Yaşlanmayı Yavaşlatmak</li>
+                            <li li class="dropdown-item btn">Maymun Çiçeği (Monkeypox) Hastalığı</li>
+                        </ul>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -52,6 +68,7 @@
     <div class="container mt-5">
         <div class="row">
             <!-- sol menü start -->
+            <!-- bunu güncellediğinde navbarı da güncelle -->
             <div class="col-lg-2 bg-OR2 p-4 sticky-top rounded-4 d-none d-lg-block">
                 <h2 class="text-center">Yazarlar</h2>
                 <ul class="list-group list-group-flush text-lg-start text-center ">
@@ -70,8 +87,10 @@
                     <div class="col-sm-3 text-center">
                         <img class="profil-foto my-4" src="img/yesim.jpeg" alt="">
                         <p><strong>Dr. Yeşim BOZBEY SERT</strong><br>İşyeri Hekimi</p>
+                        <p class="text-primary mt-5">Dergi Sayı: 22 <br>
+                        Tarih: Ekim 22</p>
                     </div>
-                    <div class="col-sm-9 ps-5">
+                    <div class="col-sm-9 ps-sm-5">
                         <h2 class="mb-4">Meme Kanseri Kaderiniz Olmasın!!!!!</h2>
                     
                         <p class="makale-ozet">
@@ -92,9 +111,10 @@
                     <div class="col-sm-3 text-center">
                         <img class="profil-foto my-4 mx-2 " src="img/gokhan.jpeg" alt="">
                         <p><strong>Dr. Gökhan YENER</strong><br>İşyeri Hekimi</p>
-                        <p></p>
+                        <p class="text-primary mt-5">Dergi Sayı: 22 <br>
+                            Tarih: Ekim 22</p>
                     </div>
-                    <div class="col-sm-9 ps-5">
+                    <div class="col-sm-9 ps-sm-5">
                         <h2 class="mb-4">Gizli Tehlike: Metabolik Sendrom</h2>
                         
                         <h3>Metabolik Sendrom Nedir?</h3>
@@ -113,9 +133,10 @@
                     <div class="col-sm-3 text-center">
                         <img class="profil-foto my-4 mx-2 " src="img/ozgur.jpeg" alt="">
                         <p><strong>Sm. Özgür KAHRAMAN</strong><br>Sağlık Memuru</p>
-                        <p></p>
+                        <p class="text-primary mt-5">Dergi Sayı: 22 <br>
+                            Tarih: Ekim 22</p>
                     </div>
-                    <div class="col-sm-9 ps-5">
+                    <div class="col-sm-9 ps-sm-5">
                         <h2 class="mb-4">BUGÜN KALBİN İÇİN NE YAPTIN? 🌝❤</h2>
                     
                         <p class="makale-ozet">
@@ -135,9 +156,10 @@
                     <div class="col-sm-3 text-center">
                         <img class="profil-foto my-4 mx-2 " src="img/murat.jpeg" alt="">
                         <p><strong>Dr. Murat GÖKDUMAN</strong><br>İşyeri Hekimi</p>
-                        <p></p>
+                        <p class="text-primary mt-5">Dergi Sayı: 22 <br>
+                            Tarih: Ekim 22</p>
                     </div>
-                    <div class="col-sm-9 ps-5">
+                    <div class="col-sm-9 ps-sm-5">
                         <h2 class="mb-4">Yaşlanmayı yavaşlatmak</h2>
                     
                         <p class="makale-ozet">
@@ -155,9 +177,10 @@
                     <div class="col-sm-3 text-center">
                         <img class="profil-foto my-4 mx-2 " src="img/murat.jpeg" alt="">
                         <p><strong>Dr. Murat GÖKDUMAN</strong><br>İşyeri Hekimi</p>
-                        <p></p>
+                        <p class="text-primary mt-5">Dergi Sayı: 22 <br>
+                            Tarih: Ekim 22</p>
                     </div>
-                    <div class="col-sm-9 ps-5">
+                    <div class="col-sm-9 ps-sm-5">
                         <h2 class="mb-4">Maymun Çiçeği (Monkeypox) Hastalığı</h2>
                         <h3>Maymun Çiçeği Virüsü</h3>
                     
@@ -178,8 +201,9 @@
             </div>
             <!-- orta menü end -->
             <!-- sağ menü start -->
+            <!-- bunu güncellediğinde sağ menüyü de güncelle -->
             <div class="col-lg-3 bg-OR2 p-4 sticky-top rounded-4 d-none d-lg-block">
-                <h3 class="text-center">Konu listesi</h3>
+                <h3 class="text-center">Konu Listesi</h3>
                 <ul class="list-group list-group-flush">
                     <li li class="list-group-item"><a href="meme_kanseri_kaderiniz_olmasin.html">Meme Kanseri Kaderiniz Olmasın</a></li>
                     <li li class="list-group-item">Gizli Tehlike: Metabolik Sendrom</li>
