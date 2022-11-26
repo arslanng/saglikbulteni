@@ -40,3 +40,15 @@
     text-align: right;
     font-size: smaller;
 }
+.konuList{
+    overflow: auto;
+    max-height: 500px;
+}
+.konuList>li>a{
+    text-decoration: none;
+    color: black;
+}
+.konuList>li>a:hover{
+    text-decoration: underline;
+    color: black;
+}
