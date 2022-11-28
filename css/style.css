@@ -10,6 +10,9 @@
 .bg-OR2>ul>li{
     background-color: #f2f2f200;
 }
+.bg-OR2>ul>li:hover{
+    background-color: #f2f2f2
+}
 .bg-OR2>ul>li>a{
     text-decoration: none;
     color: black;
@@ -47,6 +50,8 @@
 .konuList>li>a{
     text-decoration: none;
     color: black;
+    text-transform: capitalize;
+
 }
 .konuList>li>a:hover{
     text-decoration: underline;

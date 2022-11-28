@@ -1,3 +1,4 @@
+// filtreleme start
 function filtre(y){
     let allYazi = document.querySelectorAll(".yazi")
     x = allYazi.length
@@ -17,4 +18,17 @@ function filtre(y){
             gorunenYazi[i].classList.remove("d-none")
         }
     }
+}
+// filtreleme end
+// yazı sayısı start
+
+let yazarlarDOMs = document.querySelectorAll(".yazar") 
+let yaziSayisi = function(yazarAdi){
+    let yazilar = document.querySelectorAll(`.${yazarAdi}`)
+    return yazilar.length 
+}
+
+for (let i = 0; i<yazarlarDOMs.length; i++){ 
+    let yazarlar = ["murat", "yesim", "gokhan", "aziz", "tolga", "bahri", "ozgur", "mustafa", "emel"]
+    yazarlarDOMs[i].innerHTML += ` <span class="badge bg-primary rounded-pill">${yaziSayisi(yazarlar[i])}</span>`
 }
