@@ -34,6 +34,12 @@
 .makale>p{
     font-size: larger;
 }
+.makale>ul>li{
+    font-size: larger;
+}
+.makale>p>ul>li{
+    font-size: larger;
+}
 .makale-ozet{
     text-align: justify;
 }
