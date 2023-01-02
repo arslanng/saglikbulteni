@@ -1,11 +1,17 @@
+body{
+    background-color: rgba(128, 128, 128, 0.103);
+}
 .bg-OR1{
     background-color: rgb(255, 205, 4);
 }
 
 .bg-OR2{
-    background-color: #f2f2f280; 
+    background-color: white; 
     height: fit-content;
-    border-top: 10px solid white;
+    top: 10px;
+}
+.bg-OR3{
+    background-color: white;
 }
 .bg-OR2>ul>li{
     background-color: #f2f2f200;
@@ -35,6 +41,9 @@
     font-size: larger;
 }
 .makale>ul>li{
+    font-size: larger;
+}
+.makale>ol>li{
     font-size: larger;
 }
 .makale>p>ul>li{
