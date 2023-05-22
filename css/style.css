@@ -78,3 +78,11 @@ h2, h3, h4, h5, h6 {
     text-decoration: underline;
     color: black;
 }
+
+.quote{
+    background-color: white; 
+    padding: 15px; 
+    border-left: 5px rgba(128, 128, 128, 0.588) solid; 
+    margin-top: 35px; 
+    margin-bottom: 35px;
+}
