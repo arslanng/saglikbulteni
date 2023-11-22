@@ -1,7 +1,7 @@
 // filtreleme start
 function filtre(y){
     let allYazi = document.querySelectorAll(".yazi")
-    x = allYazi.length
+    let x = allYazi.length
     if(y == "noFilter"){
         for(i=0; i<x; i++) {
             allYazi[i].classList.remove("d-none");
@@ -13,8 +13,8 @@ function filtre(y){
             allYazi[i].classList.add("d-none");
         }
         let gorunenYazi = document.querySelectorAll(`.${y}`)
-        y = gorunenYazi.length
-        for(i=0; i<y; i++) {
+        let z = gorunenYazi.length
+        for(i=0; i<z; i++) {
             gorunenYazi[i].classList.remove("d-none")
         }
     }
@@ -29,6 +29,6 @@ let yaziSayisi = function(yazarAdi){
 }
 
 for (let i = 0; i<yazarlarDOMs.length; i++){ 
-    let yazarlar = ["murat", "yesim", "gokhan", "aziz", "tolga", "bahri", "ozgur", "mustafa", "emel"]
+    let yazarlar = ["murat", "yesim", "gokhan", "aziz", "tolga", "bahri", "ozgur", "mustafa", "emel", "diger"]
     yazarlarDOMs[i].innerHTML += ` <span class="badge bg-primary rounded-pill">${yaziSayisi(yazarlar[i])}</span>`
 }
